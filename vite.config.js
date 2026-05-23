@@ -1,7 +1,6 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
+// vite.config.js
 export default defineConfig({
   plugins: [react()],
-  base: '/Ani-os/', // Update this to match your new GitHub repository name exactly
+  // Replace 'Ani-os' with the exact case-sensitive name of your repo
+  base: '/Ani-os/', 
 });
