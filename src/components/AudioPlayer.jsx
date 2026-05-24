@@ -14,7 +14,7 @@ export default function AudioPlayer() {
   // Options:
   // - Put an MP3 in /public/ambient.mp3 and use "/ambient.mp3"
   // - Use a royalty‑free URL (this one is for testing)
-  const SONG_URL = '/public/ambient.mp3'; // ← replace with your own file or URL
+  const SONG_URL = '/ambient.mp3'; // ← replace with your own file or URL
 
   useEffect(() => {
     if (audioRef.current) {
