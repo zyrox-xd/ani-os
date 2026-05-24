@@ -539,6 +539,42 @@ export default function Archive() {
           </p>
         </motion.div>
       </div>
+      {/* What's Next */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="max-w-3xl mx-auto mt-20"
+>
+  <div className="glass-card p-8 text-center border-anios-indigo/30">
+    <Sparkles className="w-8 h-8 text-anios-indigo mx-auto mb-4" />
+    <h2 className="text-3xl font-playfair font-bold">Your journey continues</h2>
+    <p className="text-anios-muted mt-2 max-w-xl mx-auto">
+      You’ve built the foundation. Now take it into the world.
+    </p>
+    <div className="grid md:grid-cols-2 gap-4 mt-6 text-left">
+      <div className="p-3 bg-black/30 rounded-xl">
+        <h3 className="font-bold text-sm">📁 Build a portfolio</h3>
+        <p className="text-xs text-anios-muted mt-1">Showcase your best reconstruction and original work.</p>
+      </div>
+      <div className="p-3 bg-black/30 rounded-xl">
+        <h3 className="font-bold text-sm">🤝 Offer a free redesign</h3>
+        <p className="text-xs text-anios-muted mt-1">Local shop, nonprofit, or friend – real constraints teach fast.</p>
+      </div>
+      <div className="p-3 bg-black/30 rounded-xl">
+        <h3 className="font-bold text-sm">📓 Continue visual diary</h3>
+        <p className="text-xs text-anios-muted mt-1">One interface analysis per day. Taste compounds.</p>
+      </div>
+      <div className="p-3 bg-black/30 rounded-xl">
+        <h3 className="font-bold text-sm">🔄 Revisit this archive</h3>
+        <p className="text-xs text-anios-muted mt-1">Your future self will thank you for the notes you leave today.</p>
+      </div>
+    </div>
+    <p className="text-xs text-anios-subtle mt-6 italic">
+      — The only way out is through. Keep building.
+    </p>
+  </div>
+</motion.div>
     </section>
   );
 }

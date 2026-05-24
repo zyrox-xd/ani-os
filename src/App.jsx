@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import BottomNav from './components/BottomNav';
+import AudioPlayer from './components/AudioPlayer';
 
 // Import all pages (already done)
 import Landing from './sections/Landing';
@@ -14,6 +15,7 @@ import GhostMode from './sections/GhostMode';     // ← add
 import Psychology from './sections/Psychology';   // ← add
 import Archive from './sections/Archive';
 import Settings from './sections/Settings';
+
 
 export default function App() {
   return (
@@ -32,6 +34,7 @@ export default function App() {
         <Route path="/settings" element={<Settings />} />
       </Routes>
       <BottomNav />
+      <AudioPlayer />
     </div>
   );
 }
