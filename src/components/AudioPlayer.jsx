@@ -10,11 +10,11 @@ export default function AudioPlayer() {
   const [isMuted, setIsMuted] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Placeholder song URL – replace with your own audio file
-  // Options:
-  // - Put an MP3 in /public/ambient.mp3 and use "/ambient.mp3"
-  // - Use a royalty‑free URL (this one is for testing)
-  const SONG_URL = '/ambient.mp3'; // ← replace with your own file or URL
+  // Royalty-free ambient music URL (from Pixabay)
+  // You can replace this with your own audio file:
+  // 1. Add an MP3 file to /public/song.mp3
+  // 2. It will automatically work with this URL
+  const SONG_URL = '/song.mp3';
 
   useEffect(() => {
     if (audioRef.current) {
