@@ -1,6 +1,7 @@
-// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
 export default defineConfig({
   plugins: [react()],
-  // Replace 'Ani-os' with the exact case-sensitive name of your repo
   base: '/Ani-os/', 
 });
